@@ -1,8 +1,8 @@
-FROM mhart/alpine-node:8
+FROM mhart/alpine-node:16.4.2
 
 ENV NODE_VERSION 8.9.4
 
-RUN apk add --no-cache make gcc g++ python bash
+RUN apk add --no-cache make gcc g++ python3 bash
 
 WORKDIR /var/expressCart
 
